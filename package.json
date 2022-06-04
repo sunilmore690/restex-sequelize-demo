@@ -1,0 +1,29 @@
+{
+  "name": "restex-sequelize-demo",
+  "version": "1.0.0",
+  "description": "Rest API using Relation database using restex",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunilmore690/restex-sequelize-demo.git"
+  },
+  "author": "Sunil More",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunilmore690/restex-sequelize-demo/issues"
+  },
+  "homepage": "https://github.com/sunilmore690/restex-sequelize-demo#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "pg": "^8.7.3",
+    "restex": "2.0.0",
+    "sequelize": "^6.20.1"
+  }
+}
