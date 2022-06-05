@@ -25,18 +25,7 @@ let restex = new RestEx(app, {
   // routesPath: path.resolve(__dirname + "/routes"),
   // middlewaresPath: path.resolve(__dirname + "/middleware.js")
 });
-//adding  some sample users
-let UserModel = restex.model('users');
-async function createRecords() {
-  try {
-    await UserModel.create({ name: 'Scott Tiger', email: 'scott@test.com' });
-    await UserModel.create({ name: 'Lorem Ipsum', email: 'lorem@test.com' });
-    //    console.log('users',users)
-  } catch (e) {
-    console.error('Exception', e);
-  }
-}
-createRecords();
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   var err = new Error('Not Found');
@@ -56,5 +45,5 @@ app.use(function (err, req, res, next) {
 });
 
 app.listen(8081, function () {
-  console.log('restex-mongod-demo listening on 8081');
+  console.log('restex-sequelize-demo listening on 8081');
 });
