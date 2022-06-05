@@ -4,7 +4,7 @@
   "description": "Rest API using Relation database using restex",
   "main": "index.js",
   "scripts": {
-    "start":"node index",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "mysql2": "^2.3.3",
     "pg": "^8.7.3",
     "restex": "2.0.0",
-    "sequelize": "^6.20.1"
+    "sequelize": "^6.20.1",
+    "sqlite3": "^5.0.8"
   }
 }
