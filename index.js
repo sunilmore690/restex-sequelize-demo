@@ -4,14 +4,14 @@ const Sequelize = require('sequelize');
 var cors = require('cors');
 let RestEx = require('restex');
 const sequelize = require('./db');
-
+const path = require('path')
 let app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', function (req, res, next) {
-  res.json({ message: 'Welcome To resetex mongodb demo app' });
+  res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 let restex = new RestEx(app, {
